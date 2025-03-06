@@ -7,7 +7,7 @@ import openai
 load_dotenv()
 
 client = openai.OpenAI(
-    api_key=os.getenv('OPENAI_API_KEY')
+    api_key=os.getenv('YOUR_OPENAI_API_KEY')
 )
 
 def gpt_decision(processed_precedent):
@@ -64,7 +64,6 @@ if __name__ == "__main__":
             else:
                 wrong += 1
 
-    # 최종 결과 출력
     print(f"✅ correct num count: {correct}")
     print(f"❌ wrong num count: {wrong}")
     print(f"🤔 dontknow num count: {dontknow}")
