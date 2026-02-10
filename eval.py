@@ -183,7 +183,7 @@ Explanation: Briefly explain how the candidate’s answer aligns with or deviate
 Scoring: The score must reflect how well the candidate’s answer fulfills the requirements of the model answer, using the following strict format:
 ¨ [[Score]] ¨ , Example: ¨ Comprehensive Score: [[5]] ¨
 Comprehensive Score: Assign a final score between 0 and 10 (whole numbers only).
-- 10 = fully satisfactory (100\%)
+- 10 = fully satisfactory (100%)
 - If the candidate includes material not in the model answer, you must generally deduct points unless you are certain it is legally accurate and relevant.
 - Assume the model answer contains all information necessary for a complete response.
 - If the model answer cites books or academic articles, candidates do not need to reproduce them. However, statutory provisions must be cited accurately with precise identification of Article, Paragraph, Subparagraph, Item, etc.
@@ -210,15 +210,25 @@ class OpenAIClient:
     def generate(self, prompt: str, system_prompt: str = SYSTEM_PROMPT, 
                  temperature: float = 0.0, max_tokens: int = 8192) -> str:
         try:
-            response = self.client.chat.completions.create(
-                model=self.model_name,
-                messages=[
+            # Use max_completion_tokens for o-series models (o1, o3, etc.)
+            is_o_series = self.model_name.startswith(('o1', 'o3', 'o4'))
+            
+            params = {
+                "model": self.model_name,
+                "messages": [
                     {"role": "system", "content": system_prompt},
                     {"role": "user", "content": prompt}
                 ],
-                temperature=temperature,
-                max_tokens=max_tokens
-            )
+            }
+            
+            # o-series models don't support temperature and use max_completion_tokens
+            if is_o_series:
+                params["max_completion_tokens"] = max_tokens
+            else:
+                params["temperature"] = temperature
+                params["max_tokens"] = max_tokens
+            
+            response = self.client.chat.completions.create(**params)
             return response.choices[0].message.content
         except Exception as e:
             print(f"OpenAI Error: {e}")
@@ -742,4 +752,4 @@ if __name__ == "__main__":
         if "accuracy" in result:
             print(f"{key}: Accuracy = {result['accuracy']:.2f}%")
         elif "average_score" in result:
-            print(f"{key}: Average Score = {result['average_score']:.2f}/6")
+            print(f"{key}: Average Score = {result['average_score']:.2f}/10")
