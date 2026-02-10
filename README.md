@@ -6,7 +6,7 @@ This is the official repository for the **PLAT (Predicting the Legitimacy of pun
 
 ## Hugging Face Datasets
 
-The dataset is available on Hugging Face Hub in multiple formats.
+The dataset is available on Hugging Face Hub in multiple formats. 
 
 **Collection**: [PLAT: Perspectives on Law And Taxation](https://huggingface.co/collections/sma1-rmarud/plat-perspectives-on-law-and-taxation-698820f928d2264727b8630f)
 
