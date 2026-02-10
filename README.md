@@ -4,11 +4,11 @@ This is the official repository for the **PLAT (Predicting the Legitimacy of pun
 
 📄 **Paper**: [Taxation Perspectives from Large Language Models: A Case Study on Additional Tax Penalties](https://arxiv.org/abs/2503.03444)
 
-## 🤗 Hugging Face Datasets
+## Hugging Face Datasets
 
 The dataset is available on Hugging Face Hub in multiple formats.
 
-🗂️ **Collection**: [PLAT: Perspectives on Law And Taxation](https://huggingface.co/collections/sma1-rmarud/plat-perspectives-on-law-and-taxation-698820f928d2264727b8630f)
+**Collection**: [PLAT: Perspectives on Law And Taxation](https://huggingface.co/collections/sma1-rmarud/plat-perspectives-on-law-and-taxation-698820f928d2264727b8630f)
 
 ### English Version
 | Dataset | Description | Link |
@@ -24,7 +24,7 @@ The dataset is available on Hugging Face Hub in multiple formats.
 | **plat-kor-mc** | Binary (lawful/unlawful) questions | [🔗 Link](https://huggingface.co/datasets/sma1-rmarud/plat-kor-mc) |
 | **plat-kor-mc4** | 4-choice multiple choice questions | [🔗 Link](https://huggingface.co/datasets/sma1-rmarud/plat-kor-mc4) |
 
-## 📊 Dataset Overview
+## Dataset Overview
 
 PLAT is a benchmark dataset for evaluating legal reasoning in tax law cases. It consists of 100 high-quality Korean tax precedents related to additional tax penalties, translated into English.
 
@@ -39,7 +39,7 @@ PLAT is a benchmark dataset for evaluating legal reasoning in tax law cases. It 
 3. **Multiple Choice - 4 Options** (`mc4`): 4-choice questions
    - Fields: `case_no`, `case_info`, `facts`, `claims`, `reasoning`, `decision`, `choices`, `gt`
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Load Dataset
 
@@ -79,7 +79,7 @@ See `eval.py` for evaluation code examples.
 python eval.py
 ```
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 plat/
@@ -88,13 +88,13 @@ plat/
 └── explore_plat.ipynb  # Jupyter notebook for data exploration
 ```
 
-## 📖 Citation
+## Citation
 
 ```bibtex
-@misc{choi2025taxationperspectiveslargelanguage,
+@misc{choi2026taxationperspectiveslargelanguage,
       title={Taxation Perspectives from Large Language Models: A Case Study on Additional Tax Penalties}, 
-      author={Eunkyung Choi and Young Jin Suh and Hun Park and Wonseok Hwang},
-      year={2025},
+      author={Eunkyung Choi and Youngjin Suh and Siun Lee and Hongseok Oh and Juheon Kang and Won Hur and Hun Park and Wonseok Hwang},
+      year={2026},
       eprint={2503.03444},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
