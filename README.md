@@ -2,7 +2,7 @@
 
 This is the official repository for the **PLAT (Predicting the Legitimacy of punitive Additional Tax)** dataset from [LBox](https://lbox.kr/v2).
 
-📄 **Paper**: [Taxation Perspectives from Large Language Models: A Case Study on Additional Tax Penalties](https://arxiv.org/abs/2503.03444)
+**Paper**: [Taxation Perspectives from Large Language Models: A Case Study on Additional Tax Penalties](https://arxiv.org/abs/2503.03444)
 
 ## Hugging Face Datasets
 
@@ -102,6 +102,6 @@ plat/
 }
 ```
 
-## 📜 License
+## License
 
 CC BY-NC-SA 4.0
