@@ -13,16 +13,16 @@ The dataset is available on Hugging Face Hub in multiple formats.
 ### English Version
 | Dataset | Description | Link |
 |---------|-------------|------|
-| **plat-eng-essay** | Essay-type questions with rubrics | [🔗 Link](https://huggingface.co/datasets/sma1-rmarud/plat-eng-essay) |
-| **plat-eng-mc** | Binary (lawful/unlawful) questions | [🔗 Link](https://huggingface.co/datasets/sma1-rmarud/plat-eng-mc) |
-| **plat-eng-mc4** | 4-choice multiple choice questions | [🔗 Link](https://huggingface.co/datasets/sma1-rmarud/plat-eng-mc4) |
+| **plat-eng-essay** | Essay-type questions with rubrics | [Link](https://huggingface.co/datasets/sma1-rmarud/plat-eng-essay) |
+| **plat-eng-mc** | Binary (lawful/unlawful) questions | [Link](https://huggingface.co/datasets/sma1-rmarud/plat-eng-mc) |
+| **plat-eng-mc4** | 4-choice multiple choice questions | [Link](https://huggingface.co/datasets/sma1-rmarud/plat-eng-mc4) |
 
 ### Korean Version
 | Dataset | Description | Link |
 |---------|-------------|------|
-| **plat-kor-essay** | Essay-type questions with rubrics | [🔗 Link](https://huggingface.co/datasets/sma1-rmarud/plat-kor-essay) |
-| **plat-kor-mc** | Binary (lawful/unlawful) questions | [🔗 Link](https://huggingface.co/datasets/sma1-rmarud/plat-kor-mc) |
-| **plat-kor-mc4** | 4-choice multiple choice questions | [🔗 Link](https://huggingface.co/datasets/sma1-rmarud/plat-kor-mc4) |
+| **plat-kor-essay** | Essay-type questions with rubrics | [Link](https://huggingface.co/datasets/sma1-rmarud/plat-kor-essay) |
+| **plat-kor-mc** | Binary (lawful/unlawful) questions | [Link](https://huggingface.co/datasets/sma1-rmarud/plat-kor-mc) |
+| **plat-kor-mc4** | 4-choice multiple choice questions | [Link](https://huggingface.co/datasets/sma1-rmarud/plat-kor-mc4) |
 
 ## Dataset Overview
 
