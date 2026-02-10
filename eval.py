@@ -651,7 +651,10 @@ def evaluate_essay(
         json.dump(results, f, ensure_ascii=False, indent=4)
     
     # Save points CSV
-    points_df = pd.DataFrame(points + [avg_score], columns=["points"])
+    points_df = pd.DataFrame({
+        "index": list(range(1, len(points) + 1)) + ["avg"],
+        "points": points + [avg_score]
+    })
     csv_path = os.path.join(output_dir, f"{safe_model_name}_{lang}_points.csv")
     points_df.to_csv(csv_path, index=False, encoding='utf-8-sig')
     
