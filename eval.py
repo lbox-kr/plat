@@ -1,7 +1,6 @@
 """
 PLAT Evaluation Script
-======================
-Evaluate LLMs on PLAT dataset (Perspectives on Law And Taxation)
+Evaluate LLMs on PLAT dataset (Predicting the Legitimacy of punitive Additional Tax)
 
 Supports:
 - MC (Binary): Lawful/Unlawful/Unknown classification (3-choice)
@@ -256,7 +255,7 @@ def evaluate_mc(
     Evaluate on MC (Binary/Ternary) task - Lawful/Unlawful/Unknown classification.
     
     Args:
-        model: Model name (supports OpenAI, Claude, Gemini)
+        model: Model name for generating answers
         lang: 'kor' or 'eng'
         num_samples: Number of samples to evaluate (None for all)
         output_dir: Directory to save results
@@ -406,7 +405,7 @@ def evaluate_mc4(
     Evaluate on MC4 (4-Choice) task.
     
     Args:
-        model: Model name (supports OpenAI, Claude, Gemini)
+        model: Model name for generating answers
         lang: 'kor' or 'eng'
         num_samples: Number of samples to evaluate (None for all)
         output_dir: Directory to save results
