@@ -1,0 +1,5 @@
+openai>=1.0.0
+datasets
+pandas
+python-dotenv
+tqdm
